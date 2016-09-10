@@ -10,4 +10,7 @@ RSpec.describe Job do
     expect(job.title).to eq('my title')
     expect(job.description).to eq('my description')
   end
+
+  it { should validate_presence_of :title }
+  it { should validate_presence_of :description }
 end
